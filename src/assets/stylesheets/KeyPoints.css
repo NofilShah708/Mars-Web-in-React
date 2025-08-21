@@ -1,0 +1,131 @@
+/* About Section */
+.about-container {
+  width: 100%;
+  height: 80vh;
+  margin-top: 12%;
+}
+.about-content {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.about-content img {
+  height: 100%;
+  width: 90%;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.about-content-inner-main {
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  position: absolute;
+}
+.about-content-inner {
+  color: white;
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  margin-left: 8%;
+}
+.about-box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  margin-top: 15%;
+}
+.about-box {
+  width: 250px;
+  padding: 2%;
+  height: 250px;
+  background-color: white;
+  margin-left: 7%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .about-content-inner {
+    width: 80%;
+    font-size: 1rem;
+    margin-left: 4%;
+  }
+  .about-box {
+    width: 200px;
+    height: 200px;
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    height: auto;
+    margin-top: 8%;
+  }
+  .about-content {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content img {
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
+  }
+  .about-content-inner-main {
+    position: static;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+  }
+  .about-content-inner {
+    position: static;
+    width: 95%;
+    margin: 16px auto 0 auto;
+    font-size: 0.98rem;
+    height: auto;
+    text-align: left;
+  }
+  .about-box-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 24px;
+    gap: 18px;
+  }
+  .about-box {
+    width: 90vw;
+    max-width: 340px;
+    height: 160px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    margin-top: 16%;
+  }
+  .about-content img {
+    height: 140px;
+    border-radius: 10px;
+  }
+  .about-content-inner {
+    width: 98%;
+    font-size: 0.93rem;
+    margin: 10px auto 0 auto;
+  }
+  .about-box {
+    width: 98vw;
+    max-width: 98vw;
+    height: 120px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+  }
+}
